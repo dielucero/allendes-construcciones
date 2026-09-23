@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Allendes Construcciones: obras civiles, infraestructura y obras viales en San Luis y todo el territorio argentino.">
+  <title>Allendes Construcciones | Obras civiles y viales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>:root{--ink:#3b3e41;--ink-soft:#687078;--paper:#f1f2f3;--white:#fff;--orange:#c9343d;--orange-deep:#a52a32;--line:#d8dcdf}</style>
+  <style>
+    .site-credit{font-size:.65rem;text-align:center}
+    .site-credit a{color:#c9343d}
+    .site-credit a:hover{color:#fff}
+    @media(max-width:800px){.site-credit{line-height:1.8;text-align:left}}
+  </style>
+  <style>
+    .contact-details a{align-items:center;display:flex;gap:.8rem}
+    .contact-details svg{fill:none;flex:0 0 24px;height:24px;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.7;width:24px}
+    .contact-details .icon-fill{fill:currentColor;stroke:none}
+  </style>
+  <style>
+    .brand-intro{align-items:center;background:#f1f2f3;display:flex;inset:0;justify-content:center;position:fixed;z-index:100}
+    .brand-intro::after{background:#c9343d;bottom:0;content:"";height:4px;left:0;position:absolute;transform:scaleX(0);transform-origin:left;width:100%}
+    .brand-intro img{animation:brand-mark-in 1s cubic-bezier(.2,.8,.2,1) both;max-width:min(70vw,390px);width:390px}
+    .brand-intro.is-exiting{animation:intro-out .7s ease forwards;pointer-events:none}
+    .brand-intro.is-exiting::after{animation:progress-line 1.6s ease both}
+    @keyframes brand-mark-in{from{opacity:0;transform:scale(.88) translateY(12px)}to{opacity:1;transform:none}}
+    @keyframes progress-line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    @keyframes intro-out{to{opacity:0;visibility:hidden}}
+    @media(prefers-reduced-motion:reduce){.brand-intro{animation:intro-out .01s ease .01s forwards}.brand-intro img{animation:none}.brand-intro::after{display:none}}
+  </style>
+</head>
+<body>
+  <div class="brand-intro" aria-hidden="true"><img src="img/logo.jpeg" alt=""></div>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Allendes Construcciones, inicio">
+      <img src="img/logo.jpeg" alt="Allendes Construcciones">
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#galeria">Obras</a>
+      <a class="nav-contact" href="#contacto">Hablemos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Obras civiles · Obras viales</p>
+        <h1>Construimos lo que <em>hace avanzar</em> a tu comunidad.</h1>
+        <p class="hero-copy">Soluciones integrales para proyectos que necesitan experiencia, precisión y una mirada responsable sobre el futuro.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contacto">Iniciar un proyecto <span>↗</span></a>
+          <a class="text-link" href="#galeria">Ver nuestras obras <span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <span>San Luis · Argentina</span>
+        <span>+40 años de experiencia</span>
+      </div>
+    </section>
+
+    <section class="intro section-pad" id="nosotros">
+      <div class="section-kicker">01 / Nuestra esencia</div>
+      <div class="intro-grid">
+        <h2>La obra bien hecha <span>empieza mucho antes</span> de poner el primer ladrillo.</h2>
+        <div class="intro-text">
+          <p>Somos una empresa familiar nueva y dinámica, respaldada por más de 40 años de experiencia en el mercado de obras civiles y viales.</p>
+          <p>Nos especializamos en transformar necesidades concretas en resultados sólidos, combinando el oficio de siempre con la energía de una nueva generación.</p>
+          <a class="arrow-link" href="#trayectoria">Conocé nuestra historia <span>→</span></a>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat"><strong>40+</strong><span>Años de experiencia</span></div>
+        <div class="stat"><strong>2</strong><span>Áreas de especialización</span></div>
+        <div class="stat"><strong>7+</strong><span>Provincias alcanzadas</span></div>
+        <div class="stat"><strong>100%</strong><span>Compromiso en cada obra</span></div>
+      </div>
+    </section>
+
+    <section class="services section-pad" id="servicios">
+      <div class="section-kicker">02 / Qué hacemos</div>
+      <div class="section-heading">
+        <h2>Capacidad para cada <span>desafío.</span></h2>
+        <p>Desde la casa propia hasta grandes obras de infraestructura, hacemos que cada proyecto encuentre su forma.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card service-card-dark reveal">
+          <div class="service-number">01</div>
+          <h3>Infraestructura</h3>
+          <p>Las redes que conectan y sostienen a las ciudades.</p>
+          <ul><li>Red de agua</li><li>Red de cloacas</li><li>Posteado y tendido eléctrico</li></ul>
+        </article>
+        <article class="service-card service-card-accent reveal">
+          <div class="service-number">02</div>
+          <h3>Construcción<br>civil</h3>
+          <p>Espacios pensados para ser habitados y disfrutados.</p>
+          <ul><li>Viviendas llave en mano</li><li>Ampliaciones y terminaciones</li><li>Dirección de obra</li><li>Electricidad y plomería</li></ul>
+        </article>
+        <article class="service-card service-card-light reveal">
+          <div class="service-number">03</div>
+          <h3>Construcción<br>vial</h3>
+          <p>Infraestructura que mueve personas, productos y oportunidades.</p>
+          <ul><li>Pavimentos de hormigón</li><li>Puentes y alcantarillas</li><li>Cordón cuneta y badenes</li><li>Losas, muros y plateas</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <div class="manifesto-inner">
+        <p class="eyebrow">Nuestra visión</p>
+        <blockquote>“Transformamos sueños e ideas en estructuras sólidas y tangibles que perduran en el tiempo.”</blockquote>
+      </div>
+    </section>
+
+    <section class="values section-pad">
+      <div class="section-kicker">03 / La forma de trabajar</div>
+      <div class="values-layout">
+        <div><h2>Lo que nos sostiene <span>también se construye.</span></h2><p class="lead">Cada proyecto lleva nuestra firma: responsabilidad, compromiso y la atención personalizada que convierte una obra en una relación de confianza.</p></div>
+        <div class="values-list">
+          <div class="value-item"><span>01</span><div><h3>Responsabilidad</h3><p>Asumimos cada decisión y cumplimos nuestros compromisos.</p></div></div>
+          <div class="value-item"><span>02</span><div><h3>Compromiso</h3><p>Trabajamos para entregar resultados de calidad, siempre.</p></div></div>
+          <div class="value-item"><span>03</span><div><h3>Personalización</h3><p>Escuchamos cada necesidad y acompañamos todo el proceso.</p></div></div>
+          <div class="value-item"><span>04</span><div><h3>Profesionalismo</h3><p>Equipo capacitado, herramientas adecuadas y terminaciones cuidadas.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="history section-pad" id="trayectoria">
+      <div class="history-photo" aria-hidden="true"></div>
+      <div class="history-copy"><div class="section-kicker">04 / Trayectoria</div><h2>De San Luis<br><span>al país.</span></h2><p>“Allendes Construcciones” nació de una transición generacional: la experiencia de Allendes Padre y el impulso de Allendes Hijo se encuentran para continuar una historia construida con trabajo.</p><p>Desde nuestra provincia de nacimiento hasta Córdoba, San Juan, Mendoza, Santa Fe, Entre Ríos y La Rioja, dejamos una huella distintiva en cada territorio.</p><a class="arrow-link" href="#contacto">Hablemos de tu obra <span>→</span></a></div>
+    </section>
+
+    <section class="gallery section-pad" id="galeria">
+      <div class="section-kicker">05 / Obras realizadas</div>
+      <div class="gallery-heading"><h2>Una muestra de lo que <span>hacemos.</span></h2><div class="gallery-controls"><button class="gallery-prev" aria-label="Imagen anterior">←</button><button class="gallery-next" aria-label="Imagen siguiente">→</button></div></div>
+      <div class="gallery-track">
+        <figure><img src="img/01.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/02.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/03.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/04.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/05.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/06.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/07.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/08.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/09.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/10.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/11.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/12.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/13.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/14.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/15.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/16.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/17.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/18.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/19.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/20.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/21.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/22.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/23.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure><figure><img src="img/24.jpeg" alt="Obra realizada por Allendes Construcciones" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="contact-inner"><p class="eyebrow">06 / Empecemos</p><h2>Tu próximo proyecto<br><em>empieza acá.</em></h2><p>Contanos qué necesitás construir. Estamos para escucharte y encontrar la mejor manera de hacerlo realidad.</p><a class="button button-light" href="mailto:allendesconstrucciones@gmail.com">Escribirnos ahora <span>↗</span></a></div>
+      <div class="contact-details"><a href="mailto:allendesconstrucciones@gmail.com"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5.5h18v13H3z"></path><path d="m3 7 9 6 9-6"></path></svg><span>allendesconstrucciones@gmail.com</span></a><a href="https://wa.me/543534276775" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3.5 20l1.1-4.1A8.5 8.5 0 1 1 20.5 11.5Z"></path><path d="M8.3 8.4c.2-.4.4-.4.7-.4h.6c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c.5 1 1.3 1.7 2.3 2.2l.7-.6c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.3.6-.2.8-.9 1.4-1.7 1.4-1 0-2.6-.7-4-2-1.4-1.3-2.3-2.9-2.3-3.9 0-.4.2-.8.7-1.1Z"></path></svg><span>+54 353 427 6775</span></a><a href="https://instagram.com/allendesconstrucciones" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.7" r=".8" class="icon-fill"></circle></svg><span>@allendesconstrucciones</span></a><span>San Luis · Provincia de Argentina</span></div>
+    </section>
+  </main>
+  <footer><img src="img/logo.jpeg" alt="Allendes Construcciones"><span>© 2026 Allendes Construcciones</span><span class="site-credit">Sitio web desarrollado por: <a href="https://dielucero.is-a.dev/" target="_blank" rel="noopener">Diego Lucero</a> · Contacto: <a href="mailto:dielucero@gmail.com">dielucero@gmail.com</a> · WhatsApp: <a href="https://wa.me/542664166849" target="_blank" rel="noopener">+54 2664 166849</a></span><a href="#inicio">Volver arriba ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
